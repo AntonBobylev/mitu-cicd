@@ -24,18 +24,23 @@ input {
     border-radius: 4px;
 }
 
+.add-button {
+    color: #000
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #dbdbdb;
 }
 
 .task-list {
@@ -54,12 +59,24 @@ button:hover {
     border-left: 4px solid #4caf50;
 }
 
-.delete-btn {
-    background-color: #f44336;
-    padding: 8px 15px;
-    font-size: 14px;
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
 }
 
-.delete-btn:hover {
-    background-color: #da190b;
+.task-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+
+    button {
+        border: 1px solid #cfcfcf;
+    }
 }
