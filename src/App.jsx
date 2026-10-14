@@ -9,6 +9,9 @@ function App() {
     const [tasks, setTasks] = useState([]);
     const [inputValue, setInputValue] = useState('');
 
+    // my secret key will be in this variable
+    const VITE_APP_SECRET_KEY = import.meta.env.VITE_APP_SECRET_KEY;
+
     const handleAddTask = () => {
         if (inputValue.trim() !== '') {
             setTasks([...tasks, {id: Date.now(), text: inputValue}]);
