@@ -7,9 +7,7 @@ export default function TaskInput({ inputValue, setInputValue, onAddTask }) {
                    onChange={(e) => setInputValue(e.target.value)}
             />
 
-            <button onClick={onAddTask}
-                    className='add-button'
-            >Добавить</button>
+            <button onClick={onAddTask}>Добавить</button>
         </div>
     );
 }
